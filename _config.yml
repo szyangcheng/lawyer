@@ -6,9 +6,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  <p>欢迎！这是杨铖律师的网页。</p>
-  <p>这里将不定期更新公司法律事务、环境、能源与自然资源、争议解决有关法律资讯。</p>
-  <p>欢迎沟通、咨询。联系电话（微信同号）+86 13434447220。</p>
+  欢迎！这是杨铖律师的网页。这里将不定期更新公司法律事务、环境、能源与自然资源、争议解决有关法律资讯。欢迎沟通、咨询。联系电话（微信同号）+86 13434447220。
 
 # Build settings
 
