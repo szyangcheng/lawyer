@@ -48,6 +48,7 @@ minima:
 #
 header_pages:
   - 关于.md
+  - 友链.md
 
 # Set to `true` to show excerpts on the homepage.
 #
