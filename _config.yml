@@ -46,6 +46,7 @@ minima:
 # If you want to link only specific pages in your header, uncomment this and add the path to the pages in
 # order as they should show up.
 #
+
 header_pages:
   - 关于.md
   - 友情链接.md
