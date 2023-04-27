@@ -53,6 +53,9 @@ header_pages:
   - 友情链接.md
   - title: 搜索
     url: /search.html
+    
+    
+    
 
 # Set to `true` to show excerpts on the homepage.
 #
