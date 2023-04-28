@@ -51,8 +51,6 @@ minima:
 header_pages:
   - 关于.md
   - 友情链接.md
-  - title: 搜索
-    url: /search.html
     
     
 
