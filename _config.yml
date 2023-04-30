@@ -51,6 +51,7 @@ minima:
 header_pages:
   - 关于.md
   - 友情链接.md
+  - tagpage.html
     
     
 
