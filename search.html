@@ -1,22 +1,5 @@
 ---
 layout: page
-title: 搜索
+title: 搜索文章
 ---
-
-<div class="page page-search">
-  <input id="search-input" type="text" placeholder="请输入关键词"></input>
-  <h1>
-    <span>搜索结果</span>
-    <i class="svg-icon icon-loading"></i>
-  </h1>
-  <ul class="list-search">
-    {%- for post in site.posts  %}
-    <li hidden>
-      <a href="{{site.baseurl}}{{ post.url }}">
-        <p class="title">{{ post.title }}</p>
-        <p class="content"></p>
-      </a>
-    </li>
-    {%- endfor %}
-  </ul>
-</div>
+<p>文章搜索与分类已整合至文章列表。</p><p><a class="button" href="{{ '/articles/' | relative_url }}">前往搜索文章 →</a></p>
