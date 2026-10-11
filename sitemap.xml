@@ -3,6 +3,6 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for page in site.pages %}{% unless page.url contains '.xml' or page.url contains '.css' or page.url contains '404' or page.url contains 'search' %}{% if page.layout %}<url><loc>{{ page.url | absolute_url | xml_escape }}</loc></url>{% endif %}{% endunless %}{% endfor %}
+{% for page in site.pages %}{% unless page.url contains '.xml' or page.url contains '.css' or page.url contains '404' or page.url contains 'search' %}{% if page.layout or page.url contains '/en/' or page.url contains '/zh-hant/' %}<url><loc>{{ page.url | absolute_url | xml_escape }}</loc></url>{% endif %}{% endunless %}{% endfor %}
 {% for post in site.posts %}<url><loc>{{ post.url | absolute_url | xml_escape }}</loc></url>{% endfor %}
 </urlset>

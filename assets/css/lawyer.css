@@ -10,3 +10,5 @@
 @media(max-width:540px){.brand{gap:10px}.brand-mark{width:33px;height:39px}.brand strong{font-size:22px}.brand small{font-size:6px;letter-spacing:.08em}.menu-toggle{font-size:13px;padding:7px 10px}}
 
 @media(max-width:540px){.hero h1{font-size:clamp(28px,9.2vw,36px)}}
+
+.language-bar{padding-top:10px;padding-bottom:10px;display:flex;justify-content:flex-end}.language-bar nav{display:flex;gap:18px;font-size:13px}.language-bar [aria-current="true"]{color:var(--gold);text-decoration:underline;text-underline-offset:5px}html[lang="en"] h1,html[lang="en"] h2{letter-spacing:0}html[lang="en"] .hero h1{font-size:clamp(30px,3.5vw,49px)}html[lang="en"] .hero-intro br{display:none}html[lang="en"] .hero-credentials{flex-wrap:wrap}html[lang="en"] .brand small{letter-spacing:.04em}@media(min-width:901px){html[lang="en"] #primary-nav{gap:16px;font-size:13px}}@media(max-width:540px){.language-bar nav{gap:14px;font-size:12px}html[lang="en"] .hero h1{font-size:31px}}

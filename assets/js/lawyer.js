@@ -1,5 +1,19 @@
 (() => {
   'use strict';
+  const language = document.documentElement.lang;
+  const messages = language === 'en' ? {
+    copied: 'WeChat ID copied: 13434447220. Search for it in WeChat.',
+    failed: 'Unable to copy automatically. Please copy the WeChat ID manually: 13434447220.',
+    count: n => `${n} article${n === 1 ? '' : 's'}`
+  } : language === 'zh-Hant' ? {
+    copied: '微信號已複製：13434447220。可前往微信搜尋添加。',
+    failed: '未能自動複製，請長按或手動複製微信號：13434447220。',
+    count: n => `共 ${n} 篇文章`
+  } : {
+    copied: '微信号已复制：13434447220。可前往微信搜索添加。',
+    failed: '未能自动复制，请长按或手动复制微信号：13434447220。',
+    count: n => `共 ${n} 篇文章`
+  };
   document.documentElement.classList.add('js');
   const menu = document.querySelector('.menu-toggle');
   const nav = document.querySelector('#primary-nav');
@@ -24,9 +38,9 @@
       try {
         if (!navigator.clipboard) throw new Error('Clipboard unavailable');
         await navigator.clipboard.writeText(copyButton.dataset.copy);
-        status.textContent = '微信号已复制：13434447220。可前往微信搜索添加。';
+        status.textContent = messages.copied;
       } catch (_) {
-        status.textContent = '未能自动复制，请长按或手动复制微信号：13434447220。';
+        status.textContent = messages.failed;
       }
     });
   }
@@ -47,7 +61,7 @@
         row.hidden = !matches;
         if (matches) count++;
       });
-      status.textContent = `共 ${count} 篇文章`;
+      status.textContent = messages.count(count);
       document.querySelector('.empty-state').hidden = count > 0;
     };
     search.addEventListener('input', update);
