@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {%- include head.html -%}
-
-  <body>
-
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    {%- include footer.html -%}
-
-  </body>
-
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142e3b">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/lawyer.css' | relative_url }}">
+  <script src="{{ '/assets/js/lawyer.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至正文</a>
+  {% include header.html %}
+  <main id="main" tabindex="-1">{{ content }}</main>
+  {% include footer.html %}
+</body>
 </html>
