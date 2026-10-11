@@ -6,6 +6,7 @@
       <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>首页</a>
       <a href="{{ '/services/' | relative_url }}" {% if page.url == '/services/' %}aria-current="page"{% endif %}>法律服务</a>
       <a href="{{ '/articles/' | relative_url }}" {% if page.url == '/articles/' or page.layout == 'post' %}aria-current="page"{% endif %}>文章与观察</a>
+      <a href="{{ '/media/' | relative_url }}" {% if page.url == '/media/' %}aria-current="page"{% endif %}>媒体采访</a>
       <a href="{{ '/关于/' | relative_url }}" {% if page.url == '/关于/' %}aria-current="page"{% endif %}>关于我</a>
       <a class="nav-contact" href="{{ '/contact/' | relative_url }}" {% if page.url == '/contact/' %}aria-current="page"{% endif %}>联系咨询 <span aria-hidden="true">↗</span></a>
     </nav>
