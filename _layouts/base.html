@@ -13,6 +13,7 @@
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/lawyer.css' | relative_url }}">
   <script src="{{ '/assets/js/lawyer.js' | relative_url }}" defer></script>
+{% if site.google_analytics %}{% include google-analytics.html %}{% endif %}
 </head>
 <body>
   <a class="skip-link" href="#main">跳至正文</a>

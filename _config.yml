@@ -34,3 +34,5 @@ exclude:
   - DEPLOY.md
   - VALIDATION.md
   - .bundle
+
+google_analytics: G-LVGJ0PWX8R
