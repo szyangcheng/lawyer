@@ -45,6 +45,8 @@ for locale,prefix in [('zh-Hant','/zh-hant'),('en','/en')]:
    content.h1.string=entry['title'];content.select_one('.eyebrow').string=english(topic);content.time.string=date;content.time['datetime']=date
    content.select_one('.article-body p').string=entry['summary'];content.select_one('[data-original]')['href']=route
    for child in list(content.contents):reading.append(child)
+  if locale=='en':
+   for br in soup.find_all('br'):br.insert_after(' ')
   for node in list(soup.find_all(string=True)):
    if isinstance(node,(Comment,Doctype)) or node.parent.name in ['script','style']:continue
    if node.find_parent(class_='language-bar'):continue
